@@ -4,4 +4,4 @@ azure-purview-administration
 azure-purview-catalog
 azure-purview-account
 azure-core
-
+pandas

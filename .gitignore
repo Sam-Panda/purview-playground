@@ -2,3 +2,5 @@ purview_venv/*
 util/createVnev.cli
 .env
 util/__pycache__/helper.cpython-37.pyc
+OutputFiles/outputAssests.csv
+Assests.csv
