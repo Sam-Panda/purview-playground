@@ -15,7 +15,7 @@ TestCol,mssql://opnhckdasqlsvr.database.windows.net/opnhckdasqldb/SalesLT/Custom
 TestCol,mssql://opnhckdasqlsvr.database.windows.net/opnhckdasqldb/SalesLT/SalesOrderDetail,test_scan_azure_sql_db_v2
 TestCol,mssql://opnhckdasqlsvr.database.windows.net/opnhckdasqldb/SalesLT/SalesOrderHeader,test_scan_azure_sql_db_v2
 TestCol,mssql://opnhckdasqlsvr.database.windows.net/opnhckdasqldb/sys/database_firewall_rules,test_scan_azure_sql_db_v2
-TestCol,mssql://opnhckdasqlsvr.database.windows.net/opnhckdasqldb/sys/ipv6_database_firewall_rules,test_scan_azure_sql_db_v2
+TestCol3,mssql://opnhckdasqlsvr.database.windows.net/opnhckdasqldb/sys/ipv6_database_firewall_rules,test_scan_azure_sql_db_v33
 TestCol,mssql://opnhckdasqlsvr.database.windows.net/opnhckdasqldb/SalesLT/vProductModelCatalogDescription,test_scan_azure_sql_db_v2
-TestCol,mssql://opnhckdasqlsvr.database.windows.net/opnhckdasqldb/SalesLT/vProductAndDescription,test_scan_azure_sql_db_v2
-TestCol,mssql://opnhckdasqlsvr.database.windows.net/opnhckdasqldb/SalesLT/vGetAllCategories,test_scan_azure_sql_db_v2
+TestCol2,mssql://opnhckdasqlsvr.database.windows.net/opnhckdasqldb/SalesLT/vProductAndDescription,test_scan_azure_sql_db_v22
+TestCol4,mssql://opnhckdasqlsvr.database.windows.net/opnhckdasqldb/SalesLT/vGetAllCategories,test_scan_azure_sql_db_v44

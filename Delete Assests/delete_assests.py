@@ -25,7 +25,7 @@ except ValueError as e:
 
 # declare the collection name
 
-collection_name = "AutomationTestColllection"
+collection_name = "TestCol"
 
 collection_list = client.collections.list_collections()
 for collection in collection_list:
@@ -71,4 +71,4 @@ file_path = os.path.join(os.getcwd(),"OutputFiles", "outputAssests.csv")
 df.to_csv(file_path, index=False)
 
 # We are going to deleteall the Guids. I have commented out this to avoid any accidental delete.
-# catalog_client.entity.delete_by_guids(guids=guids)
+catalog_client.entity.delete_by_guids(guids=guids)
