@@ -25,7 +25,7 @@ except ValueError as e:
 
 # declare the collection name
 
-collection_name = "TestCol"
+collection_name = "raw"
 
 collection_list = client.collections.list_collections()
 for collection in collection_list:
