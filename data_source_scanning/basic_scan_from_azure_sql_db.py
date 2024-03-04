@@ -27,16 +27,16 @@ for collection in collection_list:
 
 
 scan_name = "test_scan_azure_sql_db"
-datasource_name = "ds4mapi_azuresqlserver_opnhckdasqlsvr"
-resource_endpoint = "opnhckdasqlsvr.database.windows.net"
-resource_id = f"/subscriptions/{subscription_id}/resourceGroups/openhack_data_analytics/providers/Microsoft.Sql/servers/opnhckdasqlsvr"
+datasource_name = "<<registereed-datasourcename-purview>>"
+resource_endpoint = "<<sql-server-name>>.database.windows.net"
+resource_id = f"/subscriptions/{subscription_id}/resourceGroups/<<resource_group_name>>/providers/Microsoft.Sql/servers/<<sql-server-name>>"
 reference_name_purview = purview_account_name
 
-databaseName = "opnhckdasqldb"
+databaseName = "<<database-name>>"
 
 
 body_input = {
-        "kind": "AzureSqlDatabaseMsi",
+        "kind": "AzureSqlDatabaseMsi", # Authetication via the MSI
         "properties": {
 
             "collection": {

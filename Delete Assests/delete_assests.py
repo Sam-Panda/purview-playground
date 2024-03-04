@@ -6,6 +6,7 @@ from azure.core.exceptions import HttpResponseError
 import os
 from dotenv import load_dotenv
 from util.helper import Intialization 
+import pandas as pd
 
 i = Intialization()
 subscription_id = i.subscription_id
@@ -24,7 +25,7 @@ except ValueError as e:
 
 # declare the collection name
 
-collection_name = "AutomationTestColllection"
+collection_name = "raw"
 
 collection_list = client.collections.list_collections()
 for collection in collection_list:
@@ -56,9 +57,18 @@ payload= {
 
 json_results = catalog_client.discovery.query(payload)
 guids = []
+df = pd.DataFrame(columns=['guid', 'qualifiedName'])
+
 for entity in json_results["value"]:
-    print(entity["id"])
+    guid = entity["id"]
+    qualifiedName = entity["qualifiedName"]
+    df = df.append({'guid' : guid, 'qualifiedName': qualifiedName}, ignore_index=True)
+    print(f"GUID: {guid} qualifiedName: {qualifiedName}")
     guids.append(entity["id"])
 
+# save the content that we are going to delete in a csv
+file_path = os.path.join(os.getcwd(),"OutputFiles", "outputAssests.csv")
+df.to_csv(file_path, index=False)
 
+# We are going to deleteall the Guids. I have commented out this to avoid any accidental delete.
 catalog_client.entity.delete_by_guids(guids=guids)
