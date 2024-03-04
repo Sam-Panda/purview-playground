@@ -25,7 +25,7 @@ You can create the list using the script (`data_source_scanning\utilities\scoped
 
 The objects that you would like to include, you can populate the corresponding collection name and associated scan name in the respective columns. For the other objects which we don't want to be included in the scan, we can put "exclude". Here is how the list look like
 
-![alt text](.media\assets_to_be_inlcuded.png)
+![alt text](https://github.com/Sam-Panda/purview-playground/blob/f40ef09c8a21b34c1449df979fcd64d3b2145bc2/data_source_scanning/.media/assets_to_be_inlcuded.png)
 
 ## create the python virtual environment 
 
@@ -48,8 +48,18 @@ In order to execute the script, we need to [create a python virtual environment]
 Once the virtual environment is created and the .env file is updated with the correct values, we can execute the script using the following command.
 `python data_source_scanning\scoped_scanning_from_lookup_file.py`
 
+Please note that if you would like to use EntraID authentication,, you can disable the service principal authentication and enable the EntraID authentication in the script. 
+
+```python
+def get_credentials():
+    # credentials = ClientSecretCredential(client_id=client_id, client_secret=client_secret, tenant_id=tenant_id) # this portion is for service principal authentication
+    credentials = AzureCliCredential() # this portion is for EntraID authentication
+    return credentials
+
+```
+
 ## Output
 
 After running the script, we would be able to see the output in the console. If we go to the Purview service, we would be able to see the scoped scanning job in the "Scanning" tab.
 
-![alt text](.media\scopped_scanning_image.png)
+![alt text](https://github.com/Sam-Panda/purview-playground/blob/f40ef09c8a21b34c1449df979fcd64d3b2145bc2/data_source_scanning/.media/scopped_scanning_image.png
