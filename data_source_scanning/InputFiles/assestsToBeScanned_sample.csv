@@ -1,8 +1,0 @@
-collectionName,assetqualifiedDomain,scanName
-ScopedScanningAutomation, mssql:/<<sql-svr-name>>.database.windows.net/WideWorldImporters/,test_scan_azure_sql_db_v3
-ScopedScanningAutomation,mssql://<<sql-svr-name>>.database.windows.net/WideWorldImporters/Application/TransactionTypes_Archive,test_scan_azure_sql_db_v3
-ScopedScanningAutomation,mssql://<<sql-svr-name>>.database.windows.net/WideWorldImporters/Application/DeliveryMethods_Archive,test_scan_azure_sql_db_v3
-ScopedScanningAutomation,mssql://<<sql-svr-name>>.database.windows.net/WideWorldImporters/Sales/OrderLines,test_scan_azure_sql_db_v3
-ScopedScanningAutomation,mssql://<<sql-svr-name>>.database.windows.net/WideWorldImporters/Sales/Orders,test_scan_azure_sql_db_v3
-ScopedScanningAutomation,mssql://<<sql-svr-name>>.database.windows.net/WideWorldImporters/Application,test_scan_azure_sql_db_v3
-ScopedScanningAutomation,mssql://<<sql-svr-name>>.database.windows.net/WideWorldImporters/Sales,test_scan_azure_sql_db_v3
