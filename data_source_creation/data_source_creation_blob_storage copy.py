@@ -24,14 +24,14 @@ for collection in collection_list:
       collection_name = collection["name"]
 
 
-## registering the data source ( blob storage)
+## registering the data source ( blob storage) 
 
 ds_name = "ds4mapi_blob_functionstorage32zn"
 
-storage_name = "functionstorage32zn"
-storage_id = f"/subscriptions/{subscription_id}/resourceGroups/ADBPVlineagev3/providers/Microsoft.Storage/storageAccounts/functionstorage32zn"
-rg_name = "ADBPVlineagev3"
-rg_location = "Central US"
+storage_name = "<<storage-account-name>>"
+storage_id = f"/subscriptions/{subscription_id}/resourceGroups/<<resource-group-name>>/providers/Microsoft.Storage/storageAccounts/<<storage-account-name>>"
+rg_name = "<<resource-group-name>>"
+rg_location = "<<resource-group-location>>"
 reference_name_purview = purview_account_name
 
 

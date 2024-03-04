@@ -28,10 +28,10 @@ for collection in collection_list:
 
 ds_name = "ds4mapi_azuresqlserver_opnhckdasqlsvr"
 
-resource_name = "opnhckdasqlsvr"
-resource_endpoint = "opnhckdasqlsvr.database.windows.net"
-resource_id = f"/subscriptions/{subscription_id}/resourceGroups/openhack_data_analytics/providers/Microsoft.Sql/servers/opnhckdasqlsvr"
-rg_name = "openhack_data_analytics"
+resource_name = "<<sql-seerver-name"
+resource_endpoint = "<<sql-server_name>>.database.windows.net"
+resource_id = f"/subscriptions/{subscription_id}/resourceGroups/<<resource-group-Name>>/providers/Microsoft.Sql/servers/<<sql-server-name>>"
+rg_name = "<<resource-group_name"
 rg_location = "eastus"
 reference_name_purview = purview_account_name
 

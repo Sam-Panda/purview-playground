@@ -79,7 +79,7 @@ def create_default_scan (scan_name, collection_name_unique_id):
                 "scanRulesetType":"System"
             }
     }
-    print (body_input)
+    # print (body_input)
     try:
         client = get_purview_client(reference_name_purview)
     except ValueError as e:
@@ -88,7 +88,7 @@ def create_default_scan (scan_name, collection_name_unique_id):
 
     try:
         response = client.scans.create_or_update(data_source_name=purview_registered_datasource_name, scan_name=scan_name, body=body_input)
-        print(response)
+        # print(response)
     except HttpResponseError as e:
         print(e)
 
@@ -107,8 +107,9 @@ def apply_filter_on_scan(scan_name, lstexcludeUriPrefixes, lstincludeUriPrefixes
         "includeRegexes":None
         }
      }
-    print (filter_body_input)
-    client.filters.create_or_update(data_source_name=purview_registered_datasource_name, scan_name=scan_name, body=filter_body_input)
+    # print (filter_body_input)
+    response = client.filters.create_or_update(data_source_name=purview_registered_datasource_name, scan_name=scan_name, body=filter_body_input)
+    print (response)
 
 
 
