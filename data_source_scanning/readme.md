@@ -62,4 +62,4 @@ def get_credentials():
 
 After running the script, we would be able to see the output in the console. If we go to the Purview service, we would be able to see the scoped scanning job in the "Scanning" tab.
 
-![alt text](https://github.com/Sam-Panda/purview-playground/blob/f40ef09c8a21b34c1449df979fcd64d3b2145bc2/data_source_scanning/.media/scopped_scanning_image.png
+![alt text](https://github.com/Sam-Panda/purview-playground/blob/f40ef09c8a21b34c1449df979fcd64d3b2145bc2/data_source_scanning/.media/scopped_scanning_image.png)
