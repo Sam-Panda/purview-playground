@@ -25,7 +25,7 @@ You can create the list using the script (`data_source_scanning\utilities\scoped
 
 The objects that you would like to include, you can populate the corresponding collection name and associated scan name in the respective columns. For the other objects which we don't want to be included in the scan, we can put "exclude". Here is how the list look like
 
-![alt text](https://github.com/Sam-Panda/purview-playground/blob/f40ef09c8a21b34c1449df979fcd64d3b2145bc2/data_source_scanning/.media/assets_to_be_inlcuded.png)
+![alt text](https://github.com/Sam-Panda/purview-playground/blob/main/data_source_scanning/.media/assets_to_be_inlcuded.png)
 
 ## create the python virtual environment 
 
@@ -62,4 +62,4 @@ def get_credentials():
 
 After running the script, we would be able to see the output in the console. If we go to the Purview service, we would be able to see the scan is created with the objects that we have specified in the lookup list.
 
-![alt text](https://github.com/Sam-Panda/purview-playground/blob/f40ef09c8a21b34c1449df979fcd64d3b2145bc2/data_source_scanning/.media/scopped_scanning_image.png)
+![alt text](https://github.com/Sam-Panda/purview-playground/blob/main/data_source_scanning/.media/scopped_scanning_image.png)
