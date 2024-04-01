@@ -4,6 +4,7 @@
 
 **Example 1**: [Scoped Scanning of the datasource using the Purview rest API.](https://github.com/Sam-Panda/purview-playground/blob/main/data_source_scanning/readme.md)
 
+**Example 2**: [Metadata Extract from Azure Purview for Reporting.](https://github.com/Sam-Panda/purview-playground/blob/main/metadata_extract_for_reporting/readme.md)
 
 
 ## A guide for developers who want to leverage the Azure Purview REST API to create, read, update and delete Purview resources.

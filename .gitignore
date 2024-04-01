@@ -6,3 +6,5 @@ OutputFiles/outputAssests.csv
 Assests.csv
 InputFiles/assestsToBeScanned.csv
 data_source_scanning/InputFiles/assestsToBeScanned.csv
+metadata_extract_for_reporting/output.json
+metadata_extract_for_reporting/classification_report.csv
