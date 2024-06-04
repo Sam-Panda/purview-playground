@@ -1,3 +1,12 @@
-﻿AssetName,AssetDescription
-Cities_Archive,<div>the table contains archived city names</div>
-TransactionTypes,<div>The Types of Transactions</div>
+﻿CollectionName,AssetName,AssetFQN,AssetDescription,IsColumn,ParentAssetFQN
+ADLSgen2,cdcdata,https://adlsg2contosoodbk.dfs.core.windows.net/cdcdata,This is part of AFDLS Gen2 storage and contains the change data capture information,No,NA
+ADLSgen2,change_data_feed1,https://adlsg2contosoodbk.dfs.core.windows.net/misc/temp/change_data_feed1/,"  Thedata present in   TheADLSgen2 collection, and this represnts   Thelogical metadata of   Thedelta table.",No,NA
+AzureSQLDB,Address,mssql://demosqlsvr24.database.windows.net/contososqldb/SalesLT/Address,  Thetable contains Addresses</div>,No,NA
+AzureSQLDB,TransactionTypes,NA,<div>  TheTypes of Transactions</div>,No,NA
+AzureSQLDB,CountryRegion,NA,Region belongs to,Yes,mssql://demosqlsvr24.database.windows.net/contososqldb/SalesLT/Address
+AzureSQLDB,City,NA,City Belongs to,Yes,mssql://demosqlsvr24.database.windows.net/contososqldb/SalesLT/Address
+AzureSQLDB,Product,mssql://demosqlsvr24.database.windows.net/contososqldb/SalesLT/Product,  Thedetails of   TheProduct,No,NA
+AzureSQLDB,StandardCost,NA,  TheStandard Cost of   Theproduct,Yes,mssql://demosqlsvr24.database.windows.net/contososqldb/SalesLT/Product
+AzureSQLDB,Weight,NA,  Theweight of   Theproduct/unit,Yes,mssql://demosqlsvr24.database.windows.net/contososqldb/SalesLT/Product
+AzureSQLDB,Customer,mssql://demosqlsvr24.database.windows.net/contososqldb/SalesLT/Customer,This is the custome table,No,NA
+AzureSQLDB,FirstName,NA,This column provide the information about the First Name of the customer,Yes,mssql://demosqlsvr24.database.windows.net/contososqldb/SalesLT/Customer
